@@ -1,0 +1,21 @@
+const ChangeQuanttity = ({quantity, setQuantity}) => {
+
+    const addQuantity = () => {
+        const newQuantity = quantity + 1;
+        setQuantity(newQuantity)
+    }
+
+    const removeQuantity = () => {
+        if (quantity <= 1) return;
+        const changeQuantity = quantity -1;
+        setQuantity(changeQuantity)
+    }
+    return(
+    <div>
+        <button onClick={addQuantity}>+</button>
+        <span>{quantity}</span>
+        <button onClick={removeQuantity}>-</button>
+    </div>
+)
+}
+export default ChangeQuanttity;
