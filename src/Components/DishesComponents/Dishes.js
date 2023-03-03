@@ -7,13 +7,14 @@ const Dishes = () => {
     const selectedCategory = useSelector(getSelectedCategory);
 
 return(
-    <div>
+    <div> 
         {dataDishes
         .filter(dish => {
             if(selectedCategory === 'ALL') return true;
             return selectedCategory === dish.category;
+            
         })
-        .map(dish => <Dish dish={dish}/>)}
+        .map((dish, index) => <Dish dish={dish} key={index}/>)}
     </div>
     )
 }
