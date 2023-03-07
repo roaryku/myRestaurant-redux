@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+/* cartSlice looks the same like dishesSlice 
+ HERE COMBINE BUTTON ADD TO CARD WITH PORTIONS */
 
 export const slice = createSlice({
     name: 'cart',

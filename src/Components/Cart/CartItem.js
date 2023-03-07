@@ -2,6 +2,12 @@ import dataDishes from "../../data/dataDishes";
 import { useDispatch } from "react-redux";
 import { removeItemFromCard } from "../../redux/cartSlice";
 
+/* 6 step - ADDING IMAGE 
+NEXT STEP - ADDING REDUX 
+CLOSE TERMINAL AND INSTAL READUX  https://redux-toolkit.js.org/introduction/getting-started 
+In src adding folder redux and in readux adding three components
+store.js, dishesSlice.js, cartSlice.js  - WORKING WITH STORE AND DISHESSLICE NEXT */
+
 const CartItem = ({cartItem}) => {
     const dishes = dataDishes.find(item => item.id === cartItem.dishId);
     const dispatch = useDispatch();

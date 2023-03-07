@@ -8,6 +8,10 @@ import { Provider } from 'react-redux'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+  /* ALWAYS PUT APP IN TAG PROVIDER === <Provider store={store}> goes the same always : always import store and provider
+   === than go to store.js*/
+
   <React.StrictMode>
     <Provider store={store}>
     <App />
